@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Permutations and Combinations</title>
+  <script src="/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <!-- <script src="/app.js"></script> -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="Container">
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#permutationsOfnumbers" aria-expanded="false" aria-controls="collapseExample">
+          Permutations
+      </button>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#combinationsofnumbers" aria-expanded="false" aria-controls="collapseExample">
+          Combinations
+      </button>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#permutationsOfwords" aria-expanded="false" aria-controls="collapseExample">
+          Permutations of Words
+      </button>
+      <div class="collapse" id="permutationsOfnumbers">
+        <P class="text-info">This  is the part of the web app that calculates the permutations of numbers</P>
+        <p class="font-weight-bold">The permutations is calculated in the form of <em>nPC</em><i>where n is the first number P is the  permutation formula and C is the second number</i></p>
+        <p class="text-md-left">Please enter the  field below</p>
+        <form>
+            <div class="form-group">
+              <label for="firstNumber">First Number</label>
+              <input type="number" class="form-control" id="firstNumber"  placeholder="Enter the firstNumber" value="2" >
+              <small id="firstNumberhelp" class="form-text text-muted">You should enter an integer number</small>
+            </div>
+            <div class="form-group">
+              <label for="secondNumber">Second number</label>
+              <input type="number" class="form-control" id="secondNumber" placeholder="Enter the secondNumber">
+              <small id="secondNumberhelp" class="form-text text-muted">It should be less than the firstNumber</small>
+              <input type="submit" value="Submit">
+            </div>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#resultpermutationsOfnumbers" aria-expanded="false" aria-controls="collapseExample">View the results of permutationsOfnumbers </button>
+      </div>
+      <div class="collapse" id="combinationsofnumbers">
+        <P class="text-info">This  is the part of the web app that calculates the Combinations of numbers</P>
+        <p class="font-weight-bold">The Combinations is calculated in the form of <em>nCr</em><i>where n is the first number C is the  Combination formula and r is the second number</i></p>
+        <p class="text-md-left">Please enter the  field below</p>
+        <form>
+            <div class="form-group">
+              <label for="firstNumberC">First Number</label>
+              <input type="number" class="form-control" id="firstNumberC"  placeholder="Enter the firstNumber">
+              <small id="firstNumberhelpC" class="form-text text-muted">You should enter an integer number</small>
+            </div>
+            <div class="form-group">
+              <label for="secondNumberC">Second number</label>
+              <input type="number" class="form-control" id="secondNumberC" placeholder="Enter the secondNumber">
+              <small id="secondNumberhelpC" class="form-text text-muted">It should be less than the firstNumber</small>
+            </div>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#resultpermutationsOfnumbers" aria-expanded="false" aria-controls="collapseExample">View the results of combinationsofnumbers </button>
+      </div>
+      <div class="collapse" id="permutationsOfwords">
+        <P class="text-info">This  is the part of the web app that calculates the permutations of words that is the strings</P>
+        <p class="font-weight-bold">The permutation of words is calculated in the form of <em>wKr</em><i>where n is the number of words in the String entered K is the permutations formula and r is the number of times the word is to be taken</i></p>
+        <p class="text-md-left">Please enter the  field below</p>
+        <form method="POST">
+            <div class="form-group">
+              <label for="Thestring">The word//The string</label>
+              <input type="text" class="form-control" id="Thestring"  placeholder="Enter the String or the word">
+              <small id="Stringhelp" class="form-text text-muted">You should enter an a word with no spaces e.g Kenya and not k e n y a</small>
+            </div>
+            <div class="form-group">
+              <label for="NumberoftimesTaken">Number of times Taken</label>
+              <input type="number" class="form-control" id="NumberoftimesTaken" placeholder="Enter the NumberoftimesTaken">
+              <small id="NumberoftimesTakenhelp" class="form-text text-muted">It should be less than the number of words counted</small>
+            </div>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#resultpermutationsOfWords" aria-expanded="false" aria-controls="collapseExample">View the results of permutationsOfWords </button>
+      </div>
+  </div>
+</body>
+</html>
